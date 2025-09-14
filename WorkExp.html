@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="WorkExpStyle.css">
+        
+    </head> 
+
+
+    <body>
+        <div class="top-banner">
+            <span>D.Siu Portfolio</span>
+            <div class="banner-buttons" id="navLinks">
+                <button onclick="window.location.href='http://127.0.0.1:5500/index.html'">
+                    HOME</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Projects/Project.html'">
+                    PROJECTS</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/WorkExp.html'">
+                    WORK EXPERIENCE</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Contact.html'">
+                    CONTACT</button>
+            </div>
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
+        </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+            document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
+
+        <h3>WORK EXPERIENCE</h3>
+
+        <div class="box">
+            <h4>SINGH IMAGINEERING LAB</h4>
+            <p class="subtitle">Lab Advisor</p>
+            <p><strong>June 2025 - Present</strong></p>
+        </div>
+            
+    </body>
+</html>

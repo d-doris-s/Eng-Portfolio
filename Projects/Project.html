@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio--Projects</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="Banner&body.css">
+
+        <style>
+            
+            h3 {font-family: 'Courier New', Courier, monospace; padding: 20px 70px 0px; color: rgb(93, 53, 146); text-align: center; 
+                font-size: 60px; text-shadow: 3px 3px 7px white;}
+            p {padding: 20px; font-size: 15px; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(93, 53, 146);}
+            p.end2 {padding: 1px; font-size: 10px; color: rgb(220, 193, 213);}
+
+            section {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            
+            .project-card {
+                display: flex;
+                justify-content: center;
+                flex: 1 1 45%;
+                max-width: 400px;
+                box-sizing: border-box;
+            }
+
+            @media (max-width: 768px) {
+                .project-card {flex: 1 1 100%;}
+            }
+
+            .project-btn {
+                position: relative;
+                width: 100%;
+                height: 300px;
+                border: none;
+                padding: 0;
+                border-radius: 10px;
+                overflow: hidden;
+                cursor: pointer;
+                background: none;
+                display: block;
+            }
+
+            .project-btn img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+                transition: transform 0.35s ease;
+            }
+
+            .project-btn .overlay {
+                position: absolute;
+                inset: 0; /* top:0; right:0; bottom:0; left:0; */
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                text-align:center;
+                padding: 18px;
+                color: white;
+                background: rgb(105, 82, 157);
+                opacity: 0;
+                transition: opacity 0.25s ease;
+                z-index: 2;
+                pointer-events: none;
+            }
+
+            .overlay h4 {margin:0; padding: 40px; font-size:30px; letter-spacing:0.2px; font-family: 'Courier New', Courier, monospace;}
+
+            .project-card:hover .project-btn img { transform: scale(1.06); }
+            .project-card:hover .project-btn .overlay { opacity: 1; }
+
+
+        </style>
+    </head> 
+
+
+    <body>
+        <div class="top-banner">
+            <span>D.Siu Portfolio</span>
+            <div class="banner-buttons" id="navLinks">
+                <button onclick="window.location.href='http://127.0.0.1:5500/index.html'">
+                    HOME</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Projects/Project.html'">
+                    PROJECTS</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Contact.html'">
+                    CONTACT</button>
+            </div>
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
+        </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+            document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
+        
+        <h3>PROJECTS</h3>
+            <section>
+                
+                <div class="project-card">
+                    <button class="project-btn"
+                        onclick="window.location.href='http://127.0.0.1:5500/Projects/PhoneMount.html'">
+                        <img src="PhoneMountIso.jpg" alt="Motion-Tracking Phone Mount image"
+                            style="object-position: 50% 66%;">
+                        <div class="overlay">
+                            <h4>Motion-Tracking Phone Holder</h4>
+                        </div>
+                    </button>
+                </div>
+                
+
+                <div class="project-card">
+                    <button class="project-btn"
+                        onclick="window.location.href='http://127.0.0.1:5500/Projects/LineCar.html'">
+                        <img src="CarOriginal.PNG" alt="Line-Following Car image">
+                        <div class="overlay">
+                            <h4>Line-Follwing Car</h4>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="project-card">
+                    <button class="project-btn"
+                        onclick="window.location.href='http://127.0.0.1:5500/Projects/Truss.html'">
+                        <img src="TrussOriginal.png" alt="Truss Design image"
+                            style="object-position: 100% 50%">
+                        <div class="overlay">
+                            <h4>Truss Design</h4>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="project-card">
+                    <button class="project-btn"
+                        onclick="window.location.href='http://127.0.0.1:5500/Projects/TempSensor.html'">
+                        <img src="SensorClosed.png" alt="Temperature Sensor image">
+                        <div class="overlay">
+                            <h4>Temperature Sensor</h4>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="project-card">
+                    <button class="project-btn"
+                        onclick="window.location.href='http://127.0.0.1:5500/Projects/SkillDev.html'"">
+                        <img src="Catapult.jpg" alt="Catapult image"
+                            style="object-position: 50% 70%">
+                        <div class="overlay">
+                            <h4>Skill Development</h4>
+                        </div>
+                    </button>
+                </div>
+            </section>
+
+            <p class="end2">blah</p>
+    </body>
+</html>

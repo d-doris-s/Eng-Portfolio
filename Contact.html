@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <link rel="stylesheet" href="WorkExpStyle.css">
+        <style>
+            .contact-section {
+                margin: 30px;
+                display: flex;
+                align-items: flex-start;
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: left;
+                margin: 40px auto;
+                max-width: 300px;
+            }
+            
+            .contact-row {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .contact-btn {
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: none;
+                padding: none;
+                border-radius: 0px;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 0.2s ease;
+            }
+
+            .contact-text {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .contact-btn img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            p {
+                color: rgb(105, 82, 157);
+            }
+
+            @media (max-width: 768px) {
+                .contact-section {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .contact-text {
+                    max-width: 90%;
+                }
+            }
+
+        </style>
+    </head> 
+
+
+    <body>
+        <div class="top-banner">
+            <span>D.Siu Portfolio</span>
+            <div class="banner-buttons" id="navLinks">
+                <button onclick="window.location.href='http://127.0.0.1:5500/index.html'">
+                    HOME</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Projects/Project.html'">
+                    PROJECTS</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Contact.html'">
+                    CONTACT</button>
+            </div>
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
+        </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+            document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
+
+        <h3>CONTACT ME</h3>
+            
+        <div class="contact-section">
+            <div class="contact-row">
+                <button class="contact-btn" onclick="window.location.href=''">
+                    <img src="emailWHITE.webp" alt="Email">
+                </button>
+                <span><p>ddoriss1205@gmail.com</p></span>
+            </div>
+
+            <div class="contact-row">
+                <button class="contact-btn"
+                    onclick="window.location.href='www.linkedin.com/in/doriss1205'">
+                    <img src="linkedinWHITE2.png" alt="Linkedin">
+                </button>
+                <span><p href="www.linkedin.com/in/doriss1205">linkedin.com/in/doriss1205</p>
+                </span>
+            </div>
+        </div>
+
+  </form>
+        
+    </body>
+</html>

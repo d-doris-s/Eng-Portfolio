@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="Banner&body.css">
+        <style>
+            
+            h1 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 50px 60px 0px;
+                color: rgb(93, 53, 146);
+                text-align: center;
+                font-size: 100px;
+                text-shadow: 3px 3px 8px white;
+            }
+            h2 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding: 0px 100px 50px;
+                color: rgb(93, 53, 146);
+                text-align: center;
+                font-size: 32px;
+            }
+            h3 {
+                font-family: 'Courier New', Courier, monospace;
+                padding: 20px 70px 0px;
+                color: rgb(93, 53, 146);
+                text-align: center;
+                font-size: 38.5px;
+            }
+            h4 {
+                font-family: 'Courier New', Courier, monospace;
+                padding: 10px;
+                color: rgb(255, 255, 255);
+                text-align: center;
+                font-size: 35px;
+            }
+            p { 
+                padding: 0px 100px 10px;
+                font-size: 18px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(93, 53, 146);
+
+            }
+            p.end {
+                padding: 0px 100px 60px;
+
+            }
+            section {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+            section div {
+                display: flex;
+                justify-content: center;
+                flex: 1 1 45%;
+                max-width: 400px;
+            }
+            section button {
+                background: rgb(105, 82, 157);
+                color: rgb(255, 255, 255);
+                border: none;
+                padding: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                width: 100%;
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-shadow: 1px 1px 3px black;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                white-space: normal;
+                word-break: break-word;
+            }
+            
+            .text-center {
+                display: block;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 1000px;
+            }
+
+            .top-center {
+                display: block;
+                height: auto;
+                margin: 10px auto 30px auto;
+                max-width: 1200px;
+            }
+
+            @media (max-width: 768px) {
+                section div {
+                    flex: 1 1 100%;   
+                    max-width: 400px; 
+                }
+            }
+            @media (max-width: 900px) {
+                .text-center {
+                    flex: 1 1 100%; 
+                    max-width: 800px;
+                }
+                .top-center {
+                    flex: 1 1 100%; 
+                    max-width: 800px;
+                }
+            }
+
+        </style>
+    </head> 
+
+
+    <body>
+        <div class="top-banner">
+            <span>D.Siu Portfolio</span>
+            <div class="banner-buttons" id="navLinks">
+                <button onclick="window.location.href='http://127.0.0.1:5500/index.html'">
+                    HOME</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Projects/Project.html'">
+                    PROJECTS</button>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Contact.html'">
+                    CONTACT</button>
+            </div>
+            <div class="menu-icon" id="menuBtn">&#9776;</div>
+        </div>
+
+        <script>
+            document.getElementById("menuBtn").addEventListener("click", function() {
+            document.getElementById("navLinks").classList.toggle("show");
+            });
+        </script>
+
+        <h1>Doris Siu</h1>
+            <div class="top-center">
+                <h2>Mechanical Engineering student at Boston University who loves to design aesthetically functional creations.</h2>
+            </div>
+        <section>
+            <div>
+                <button onclick="window.location.href='http://127.0.0.1:5500/Projects/Project.html'">
+                    <h4>Check out my projects!</h4>
+                </button>
+            </div>
+        </section>
+        <div class="text-center">
+        <h3>ABOUT ME</h3>
+            <p>My name is Doris Siu, and I'm a junior ('27) studying Mechanical 
+                Engineering at Boston University with a concentration in Manufacturing. 
+                For as long as I can remember, I've always loved DIY projects 
+                and designing new inventions, sometimes to make the day-to-day life a 
+                little easier, and sometimes to make things look and feel better. 
+            </p>
+            <p> When I was 12, I built phone stands out of cardboard and 
+                cord holders out of paper. Simple, and admittedly kind of ugly, 
+                but they worked. Over the years, I kept revisiting the phone stand and
+                improving the design with new materials and styles. With each 
+                version, it became stronger, more adaptable, and prettier. I 
+                share this story because I believe it captures who I am 
+                as an engineer: someone who is always iterating, learning, and 
+                refining. 
+            </p>
+            <p>
+                Now, with access to machinery and more 
+                resilient materials, I've taken that childhood project further.
+                One of my favorite builds has been a motion-tracking phone mount 
+                that automatically follows a subject's movements. Instead of 
+                cardboard and paper, I used SolidWorks, 3D printing, laser cutting, and
+                electronics to create a durable and intricate design. 
+            </p>
+            <p class="end">
+                 Looking ahead, I want to grow as an engineer who designs products 
+                 and improves everyday life, taking ideas from concept to reality 
+                 and refining them along the way with technical expertise,
+                 persistence, and creativity.
+            </p>
+            </div>
+    </body>
+</html>
